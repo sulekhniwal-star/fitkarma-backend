@@ -13,7 +13,7 @@ RUN unzip /tmp/pb.zip -d /pb/
 # Create data directory
 RUN mkdir -p /pb/pb_data
 
-EXPOSE 8080
+EXPOSE 8090
 
 # Start PocketBase
 CMD ["/pb/pocketbase", "serve", "--http=0.0.0.0:8080", "--dir=/pb/pb_data"]
